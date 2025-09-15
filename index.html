@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gert-Jan Akerboom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,14 +15,14 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Raleway', sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #000000 0%, #404040 100%);
             min-height: 100vh;
             display: flex;
-            align-items: center;
             justify-content: center;
+            padding: 50px 0;
         }
 
         .container {
@@ -34,14 +37,10 @@
         }
 
         h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-size: 2.25rem;
+            font-weight: 500;
+            color: #555;
             margin-bottom: 2rem;
-            letter-spacing: -0.02em;
         }
 
         .links-section {
@@ -65,19 +64,21 @@
         .link {
             display: inline-block;
             padding: 0.8rem 2rem;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
+            background: transparent;
+            color: #333;
             text-decoration: none;
             border-radius: 50px;
             font-weight: 500;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-            min-width: 200px;
+            width: 300px;
+            border: 2px dashed #ddd;
+            text-align: center;
         }
 
         .link:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+            background: #e0e0e0;
+            color: #333;
         }
 
         .placeholder {
@@ -86,7 +87,20 @@
             padding: 0.8rem 2rem;
             border: 2px dashed #ddd;
             border-radius: 50px;
-            min-width: 200px;
+            width: 300px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .placeholder:hover {
+            background-color: #e0e0e0;
+        }
+
+        .text-link {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #555;
+            margin-top: 1rem;
         }
 
         @media (max-width: 768px) {
@@ -107,9 +121,12 @@
         <div class="links-section">
             <h2>Links</h2>
             <div class="links">
-                <div class="placeholder">Add your first link here</div>
-                <div class="placeholder">Add your second link here</div>
-                <div class="placeholder">Add your third link here</div>
+                <a href="https://akerboom.hyperworld.host/" class="link" target="_blank">Virtual Studio in Hyperfy V2</a>
+                <a href="https://hyperfy.io/akerboom" class="link" target="_blank">Virtual Studio in Hyperfy V1</a>
+                <a href="https://www.fxhash.xyz/u/-%20Gert-Jan%20Akerboom%20-" class="link" target="_blank">FXhash</a>
+                <a href="https://foundation.app/@gertjanakerboom" class="link" target="_blank">Foundation</a>
+                <a href="https://objkt.com/users/tz1VYfBmoBJP8dpxUHcrbEYJ597xdfmZFk1r" class="link" target="_blank">OBJKT</a>
+                <div class="text-link">Twitter @GertJanAkerboom</div>
             </div>
         </div>
     </div>
